@@ -2,7 +2,7 @@
 def keptn = new sh.keptn.Keptn()
 
 node {
-    properties([
+    nodeProperties([
         parameters([
          string(defaultValue: 'performance', description: 'Name of your Keptn Project for Performance as a Self-Service', name: 'Project', trim: false), 
          string(defaultValue: 'performancestage', description: 'Stage in your Keptn project used for Performance Feedback', name: 'Stage', trim: false), 
